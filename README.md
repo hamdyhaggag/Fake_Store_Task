@@ -3,6 +3,20 @@
 ## Overview
 
 This document provides an overview and discussion of the various components in our project, including `ProductCubit`, `ProductState`, `Product` model, `ProductRepository`, `ProductListScreen`, and `ProductCard`. Each section below outlines the purpose, design, and areas for improvement for each component.
+
+lib/
+├── models/
+│   └── product.dart                 # Defines the Product model class with properties like id, title, description, price, etc.
+├── cubit/
+│   ├── product_cubit.dart           # Contains the ProductCubit class to manage product loading and state transitions.
+│   └── product_state.dart           # Defines various states for product loading: ProductInitial, ProductLoading, ProductLoaded, and ProductError.
+├── repository/
+│   └── product_repository.dart      # Implements data fetching logic from an external API using the ProductRepository class.
+├── views/
+│   └── product_list_screen.dart     # Constructs the ProductListScreen to display a grid of products, handling different states of the product data.
+└── widgets/
+└── product_card.dart            # Creates the ProductCard widget to display individual product details like image, title, and price.
+
 ### Screenshot
 ![Product Screenshot](assets/Screenshot.png)
 
